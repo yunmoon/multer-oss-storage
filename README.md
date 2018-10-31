@@ -32,7 +32,7 @@ router.post('/file/upload', multer({ storage: ossStorage }).any(), (req, res, ne
 Key | Description
 --- | ---
 `oss` | 阿里云存储相关配置
-`allowed` | 运行上传的文件类型，不设置则默认运行所有
+`allowed` | 运行上传的文件类型，不设置则默认允许所有
 `dir` | 自定义文件上传目录，不设置则以（年/月/日）的形式
 ### 上传成功后file文件新增信息
 
